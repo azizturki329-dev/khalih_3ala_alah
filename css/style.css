@@ -1,0 +1,89 @@
+/* Style Général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card du Login/Signup */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    width: 380px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Bouton principal */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Liens */
+.switch-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
