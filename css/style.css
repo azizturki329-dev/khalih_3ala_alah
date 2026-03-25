@@ -1,7 +1,7 @@
 /* Style Général */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9ecef;
+    background-color: #f4f7f6; /* Loun a5af chwaya */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,79 +11,101 @@ body {
 
 /* Card du Login/Signup */
 .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-    width: 380px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Thabbet fil kobr mrigel */
+    transition: transform 0.3s ease;
+}
+
+/* Effect sghir ki t'7ot el souris 3al card */
+.container:hover {
+    transform: translateY(-5px);
 }
 
 .title {
     text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 /* Formulaire */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
-    color: #666;
+    margin-bottom: 8px;
+    color: #495057;
     font-weight: 600;
 }
 
 .input-field {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: border-color 0.3s;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box; /* Ymana3 el input may-okhrojch mel container */
+    transition: all 0.3s ease;
 }
 
 .input-field:focus {
     border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
     outline: none;
 }
 
 /* Bouton principal */
 .btn {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background 0.3s;
+    margin-top: 15px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0,86,179,0.3);
 }
 
-/* Liens */
+/* Liens Navigation */
 .switch-text {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
-    color: #666;
+    color: #6c757d;
 }
 
 .link {
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
 .link:hover {
+    color: #0056b3;
     text-decoration: underline;
+}
+
+/* Responsive: Bech ye5dem fil Talifoun */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
 }
