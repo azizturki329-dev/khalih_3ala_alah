@@ -1,22 +1,22 @@
 const form = document.querySelector("form");
 const btn = document.querySelector("button");
 
-// Hover effect sur le bouton
+// Hover effect
 btn.addEventListener("mouseover", () => {
     btn.style.backgroundColor = "lightblue";
 });
+
 btn.addEventListener("mouseout", () => {
     btn.style.backgroundColor = "";
 });
 
-// Gestion du submit
+// Submit form
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const email = form.querySelector('input[type="email"]').value;
     const password = form.querySelector('input[type="password"]').value;
 
-    // Validation des champs
     if (email === "" || password === "") {
         alert("Veuillez remplir tous les champs !");
         return;
@@ -27,13 +27,10 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    // Message d'alerte
     alert(`Bienvenue !\nEmail : ${email}`);
 
-    // Reset du formulaire
     form.reset();
 
-    // Message de succès
     const successMsg = document.createElement("p");
     successMsg.textContent = `Bienvenue ${email} ! Formulaire envoyé avec succès.`;
     successMsg.style.color = "green";
