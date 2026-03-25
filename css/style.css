@@ -1,0 +1,192 @@
+/* Style Général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Loun a5af chwaya */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card du Login/Signup */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Thabbet fil kobr mrigel */
+    transition: transform 0.3s ease;
+}
+
+/* Effect sghir ki t'7ot el souris 3al card */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #495057;
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box; /* Ymana3 el input may-okhrojch mel container */
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+    outline: none;
+}
+
+/* Bouton principal */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0,86,179,0.3);
+}
+
+/* Liens Navigation */
+.switch-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive: Bech ye5dem fil Talifoun */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+/* --- SECTION BOTANIQUE (Page Aziz) --- */
+
+/* Background mta3 el page kemla */
+.botanique-body {
+    background-color: #fdfaf6; /* Beige dhar3a */
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+/* El Header mta3 Aziz */
+.botanique-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #4a6741;
+}
+
+.botanique-header h1 {
+    color: #4a6741; /* Vert forêt */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style mta3 el Table mta3 el Ingrédients */
+.botanique-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+}
+
+.botanique-table th {
+    background-color: #4a6741;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.botanique-table td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+/* Style mta3 el Details (Accordion) */
+details {
+    background: #f9fbf9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 5px solid #4a6741;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #4a6741;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #f4f1ea;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newsletter-section button {
+    background-color: #5d4037; /* Marron terre */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.newsletter-section button:hover {
+    background-color: #3e2723;
+    transform: translateY(-2px);
+}
