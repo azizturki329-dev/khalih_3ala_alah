@@ -1,5 +1,5 @@
 # khalih_3ala_alah
-# 💄 Beauty Shop - Mini Site Cosmétique
+# 💄l'atelier botanique - soins naturelles- Mini Site Cosmétique
 
 ## 📌 Description du projet
 l'atelier botanique - soins naturelles est un mini-site web statique dédié aux produits cosmétiques.
