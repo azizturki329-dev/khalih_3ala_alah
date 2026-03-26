@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>L'Atelier Botanique - Soins Naturels</title>
+    <style>
+        /* Style minimaliste pour la barre de navigation */
+        nav.main-nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .nav-button {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: white;
+            background-color: #4a6741; /* Vert botanique */
+            border-radius: 4px;
+            font-family: sans-serif;
+        }
+        .nav-button:hover {
+            background-color: #3e5636;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <a href="Login.html" class="nav-button">Connexion</a>
+        <a href="SignUp.html" class="nav-button">Inscription</a>
+    </nav>
+
+    <header>
+        <img src="logo.png" alt="Logo L'Atelier Botanique (une feuille stylisée)" width="150">
+        <h1>L'Atelier Botanique</h1>
+        <p><em>La beauté, simplement, par la terre.</em></p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>La Philosophie</h2>
+            <p>L'Atelier Botanique privilégie une cosmétique raisonnée, respectueuse de l'épiderme et de la planète. Tous les produits sont fabriqués à la main, en petits lots, à partir d'ingrédients biologiques sourcés localement.</p>
+            <blockquote>
+                "La nature n'a pas besoin d'artifice pour être belle. La peau non plus."
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Les Essentiels</h2>
+            <p>Une gamme courte, formulée pour l'efficacité.</p>
+            
+            <details>
+                <summary><strong>1. Crème de Jour à la Rose Sauvage</strong></summary>
+                <p>Hydratation intense et éclat du teint. Convient aux peaux sensibles.</p>
+                <img src="creme.jpg" alt="Pot en verre de Crème de Jour à la Rose Sauvage" width="200">
+                <p><em>Prix : 29,00 €</em></p>
+            </details>
+
+            <details>
+                <summary><strong>2. Huile de Nuit Régénérante</strong></summary>
+                <p>Un complexe d'huiles précieuses pour nourrir et réparer pendant le sommeil.</p>
+                <img src="huile.jpg" alt="Flacon compte-gouttes d'Huile de Nuit" width="200">
+                <p><em>Prix : 35,00 €</em></p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Transparence des Ingrédients</h2>
+            <p>Origine des actifs principaux :</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Ingrédient</th>
+                        <th>Origine</th>
+                        <th>Propriété principale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rose Sauvage</td>
+                        <td>Provence, France</td>
+                        <td>Éclat & Anti-âge</td>
+                    </tr>
+                    <tr>
+                        <td>Huile de Jojoba</td>
+                        <td>Agriculture Bio</td>
+                        <td>Hydratation équilibrante</td>
+                    </tr>
+                    <tr>
+                        <td>Lavande Fine</td>
+                        <td>Drôme, France</td>
+                        <td>Apaisant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+
+    <section>
+        <h3>Rejoindre l'Atelier</h3>
+        <p>Inscription pour recevoir les conseils beauté et les offres exclusives.</p>
+        <form>
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="contact@email.com" required>
+            <br><br>
+            <button type="submit">S'abonner</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <nav>
+            <p>Suivre l'actualité : 
+                <a href="#">Instagram</a> | 
+                <a href="#">Boutique en ligne</a>
+            </p>
+        </nav>
+        <p><small>© 2026 L'Atelier Botanique. Tous droits réservés.</small></p>
+    </footer>
+
+</body>
+</html>
