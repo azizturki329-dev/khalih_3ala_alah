@@ -1,50 +1,45 @@
 const form = document.querySelector("form");
-const btn = document.querySelector("button");
 
-// Effet de survol
-btn.addEventListener("mouseover", () => {
-    btn.style.backgroundColor = "lightblue";
-});
+if (form) {
+    const btn = form.querySelector("button");
 
-btn.addEventListener("mouseout", () => {
-    btn.style.backgroundColor = "initial";
-});
+    btn.addEventListener("mouseover", () => { btn.style.backgroundColor = "lightblue"; });
+    btn.addEventListener("mouseout", () => { btn.style.backgroundColor = "initial"; });
 
-// Validation du formulaire
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-    // Récupération des valeurs
-    const email = form.querySelector('input[type="email"]').value;
-    const password = form.querySelector('input[name="firstpwd"]').value;
-    const confirmPassword = form.querySelector('input[name="pwd"]').value;
+        const email = form.querySelector('input[type="email"]').value;
+        const inputMotDePasse = form.querySelector('input[type="password"]');
+        const motDePasse = inputMotDePasse ? inputMotDePasse.value : "";
+        const inputConfirme = form.querySelector('input[name="pwd"]');
+        const confirmeMotDePasse = inputConfirme ? inputConfirme.value : "";
 
-    // 1. Vérification des champs vides
-    if (email === "" || password === "" || confirmPassword === "") {
-        alert("Veuillez remplir tous les champs !");
-        return;
-    }
+        if (!email || !motDePasse || (inputConfirme && !confirmeMotDePasse)) {
+            alert("Veuillez remplir tous les champs !");
+            return;
+        }
 
-    // 2. Vérification de la longueur
-    if (password.length < 6) {
-        alert("Le mot de passe doit contenir au moins 6 caractères !");
-        return;
-    }
+        if (motDePasse.length < 6) {
+            alert("Le mot de passe doit contenir au moins 6 caractères !");
+            return;
+        }
 
-    // 3. Vérification de la correspondance (Le point bloquant actuel)
-    if (password !== confirmPassword) {
-        alert("Les mots de passe ne sont pas identiques.");
-        return;
-    }
+        if (inputConfirme && motDePasse !== confirmeMotDePasse) {
+            alert("Les mots de passe ne sont pas identiques.");
+            return;
+        }
 
-    // Si tout est valide
-    alert(`Inscription réussie !\nEmail : ${email}`);
+        alert(`Inscription réussie !\nEmail : ${email}`);
+        form.reset();
 
-    // Nettoyage et message de succès
-    form.reset();
-    const successMsg = document.createElement("p");
-    successMsg.textContent = `Succès ! Formulaire envoyé pour l'adresse ${email}.`;
-    successMsg.style.color = "green";
-    successMsg.style.marginTop = "10px";
-    form.appendChild(successMsg);
-});
+        if (!form.querySelector(".message-succes")) {
+            const messageSucces = document.createElement("p");
+            messageSucces.textContent = `Succès ! Formulaire envoyé pour l'adresse ${email}.`;
+            messageSucces.style.color = "green";
+            messageSucces.style.marginTop = "10px";
+            messageSucces.classList.add("message-succes");
+            form.appendChild(messageSucces);
+        }
+    });
+}
