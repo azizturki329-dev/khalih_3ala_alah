@@ -32,6 +32,7 @@ if (form) {
 
         alert(`Inscription réussie !\nEmail : ${email}`);
         form.reset();
+        window.location.href ="accueil3.html"
 
         if (!form.querySelector(".message-succes")) {
             const messageSucces = document.createElement("p");
