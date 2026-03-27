@@ -39,7 +39,7 @@ form.addEventListener("submit", (event) => {
 
     // Si tout est valide
     alert(`Inscription réussie !\nEmail : ${email}`);
-    
+
     // Nettoyage et message de succès
     form.reset();
     const successMsg = document.createElement("p");
