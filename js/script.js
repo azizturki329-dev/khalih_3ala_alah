@@ -7,7 +7,7 @@ btn.addEventListener("mouseover", () => {
 });
 
 btn.addEventListener("mouseout", () => {
-    btn.style.backgroundColor = "";
+    btn.style.backgroundColor = "initial";
 });
 
 // Submit form
