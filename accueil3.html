@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Atelier Botanique - Soins Naturels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="botanique-body">
+
+    <nav class="top-nav">
+        <div class="nav-buttons">
+            <div id="auth-links">
+                <a href="login.html" class="nav-button">Connexion</a>
+                <a href="signup.html" class="nav-button">Inscription</a>
+            </div>
+            <button id="logoutBtn" class="nav-button" style="display:none; background-color: #5d4037; border:none; cursor:pointer;">Déconnexion</button>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo L'Atelier Botanique" class="center-logo">
+            <h1>L'Atelier Botanique</h1>
+            
+            <h2 id="welcomeMessage" style="color: #4a6741; margin-top: 15px; font-family: 'Georgia', serif;"></h2>
+            
+            <p class="tagline"><em>La beauté, simplement, par la terre.</em></p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>La Philosophie</h2>
+            <p>L'Atelier Botanique privilégie une cosmétique raisonnée, respectueuse de l'épiderme et de la planète. Tous les produits sont fabriqués à la main, en petits lots, à partir d'ingrédients biologiques sourcés localement.</p>
+            <blockquote>
+                "La nature n'a pas besoin d'artifice pour être belle. La peau non plus."
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Les Essentiels</h2>
+            <p>Une gamme courte, formulée pour l'efficacité.</p>
+            
+            <details>
+                <summary><strong>1. Crème de Jour à la Rose Sauvage</strong></summary>
+                <div class="detail-content">
+                    <p>Hydratation intense et éclat du teint. Convient aux peaux sensibles.</p>
+                    <img src="creme.jpg" alt="Crème de Jour" width="200">
+                    <p><em>Prix : 29,00 €</em></p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>2. Huile de Nuit Régénérante</strong></summary>
+                <div class="detail-content">
+                    <p>Un complexe d'huiles précieuses pour nourrir et réparer pendant le sommeil.</p>
+                    <img src="huile.jpg" alt="Huile de Nuit" width="200">
+                    <p><em>Prix : 35,00 €</em></p>
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Transparence des Ingrédients</h2>
+            <table class="botanique-table">
+                <thead>
+                    <tr>
+                        <th>Ingrédient</th>
+                        <th>Origine</th>
+                        <th>Propriété principale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rose Sauvage</td>
+                        <td>Provence, France</td>
+                        <td>Éclat & Anti-âge</td>
+                    </tr>
+                    <tr>
+                        <td>Huile de Jojoba</td>
+                        <td>Agriculture Bio</td>
+                        <td>Hydratation équilibrante</td>
+                    </tr>
+                    <tr>
+                        <td>Lavande Fine</td>
+                        <td>Drôme, France</td>
+                        <td>Apaisant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="newsletter-section">
+            <h3>Rejoindre l'Atelier</h3>
+            <p>Inscription pour recevoir les conseils beauté et les offres exclusives.</p>
+            <form>
+                <input type="email" placeholder="contact@email.com" required class="auth-input" style="max-width: 300px; display: inline-block; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <button type="submit" class="btn-brown">S'abonner</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Suivre l'actualité : 
+            <a href="#">Instagram</a> | 
+            <a href="#">Boutique en ligne</a>
+        </p>
+        <p><small>© 2026 L'Atelier Botanique. Tous droits réservés.</small></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
