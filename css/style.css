@@ -1,69 +1,222 @@
-/* Style Général */
+/* --- STYLE GÉNÉRAL --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /* Loun a5af chwaya */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #fdfaf6; /* Beige barek mta' wra9 */
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Card du Login/Signup */
-.container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px; /* Thabbet fil kobr mrigel */
-    transition: transform 0.3s ease;
+.botanique-body {
+    font-family: 'Georgia', serif;
 }
 
-/* Effect sghir ki t'7ot el souris 3al card */
-.container:hover {
-    transform: translateY(-5px);
+/* --- NAVBAR (Boutonat Nour) --- */
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* I-hez el boutonat 3al imine */
+    padding: 20px 40px;
+    background-color: transparent;
 }
 
-.title {
+.nav-button {
+    padding: 8px 20px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #333; /* Loun ghame9 kima fil photo */
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* --- HEADER (M'santar kima fil photo) --- */
+.main-header {
     text-align: center;
-    color: #2c3e50;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 25px;
+    padding: 20px 0 60px 0;
+    background-color: #fdfaf6;
 }
 
-/* Formulaire */
-.form-group {
+.center-logo {
+    width: 120px; /* Kobr el logo kima fil photo */
+    height: auto;
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #495057;
-    font-weight: 600;
+.main-header h1 {
+    font-size: 2.8rem;
+    color: #000;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: none;
 }
 
-.input-field {
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #4a6741;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #4a6741;
+    padding-left: 20px;
+    margin: 30px 0;
+    color: #555;
+}
+
+/* --- TABLES & DETAILS --- */
+.botanique-table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.botanique-table th {
+    background-color: #4a6741;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.botanique-table td {
     padding: 12px;
-    border: 2px solid #e9ecef;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+details {
+    background: #f9fbf9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4a6741;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #4a6741;
+}
+
+/* --- NEWSLETTER --- */
+.newsletter-section {
+    background: #fdfaf6;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 50px;
+    border: 1px dashed #4a6741;
+}
+
+.btn-brown {
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-brown:hover {
+    background-color: #3e2723;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #4a6741;
+    text-decoration: none;
+}
+/* --- STYLE LOGIN & SIGNUP (M'santar) --- */
+
+/* Hathi el class elli t'7ot el card fil wast bedhabt */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdfaf6; /* Loun beige mta' l'Atelier */
+    margin: 0;
+}
+
+/* El Card mta' el Login kima fil photo */
+.auth-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* El Titre kima "Login" fil photo */
+.auth-title {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    color: #5d4037; /* Marron terre kima Aziz */
+    margin-bottom: 5px;
+    display: inline-block;
+    border-bottom: 3px solid #4a6741; /* Khat akhdhar kima fil photo */
+}
+
+.auth-form-group {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.auth-form-group label {
+    display: block;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* El Input kima fil photo */
+.auth-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e9ecef;
     border-radius: 8px;
     font-size: 15px;
-    box-sizing: border-box; /* Ymana3 el input may-okhrojch mel container */
-    transition: all 0.3s ease;
+    background-color: #fdfaf6;
+    box-sizing: border-box;
 }
 
-.input-field:focus {
-    border-color: #007bff;
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0,123,255,0.2);
-    outline: none;
-}
-
-/* Bouton principal */
-.btn {
+/* El Bouton Azraq kima fil photo */
+.auth-btn {
     width: 100%;
     padding: 14px;
     background-color: #007bff;
@@ -73,120 +226,15 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-    box-shadow: 0 4px 12px rgba(0,86,179,0.3);
-}
-
-/* Liens Navigation */
-.switch-text {
-    text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-    color: #6c757d;
-}
-
-.link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Responsive: Bech ye5dem fil Talifoun */
-@media (max-width: 480px) {
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-}
-/* --- SECTION BOTANIQUE (Page Aziz) --- */
-
-/* Background mta3 el page kemla */
-.botanique-body {
-    background-color: #fdfaf6; /* Beige dhar3a */
-    color: #333;
-    font-family: 'Georgia', serif;
-}
-
-/* El Header mta3 Aziz */
-.botanique-header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    border-bottom: 3px solid #4a6741;
-}
-
-.botanique-header h1 {
-    color: #4a6741; /* Vert forêt */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-/* Style mta3 el Table mta3 el Ingrédients */
-.botanique-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    background: white;
-}
-
-.botanique-table th {
-    background-color: #4a6741;
-    color: white;
-    padding: 15px;
-    text-transform: uppercase;
-}
-
-.botanique-table td {
-    padding: 12px;
-    border: 1px solid #eee;
-    text-align: center;
-}
-
-/* Style mta3 el Details (Accordion) */
-details {
-    background: #f9fbf9;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border-left: 5px solid #4a6741;
-    cursor: pointer;
-}
-
-summary {
-    font-weight: bold;
-    color: #4a6741;
-}
-
-/* Newsletter Section */
-.newsletter-section {
-    background-color: #f4f1ea;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.newsletter-section button {
-    background-color: #5d4037; /* Marron terre */
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
     transition: 0.3s;
 }
 
-.newsletter-section button:hover {
-    background-color: #3e2723;
-    transform: translateY(-2px);
+.auth-btn:hover {
+    background-color: #0056b3;
 }
+
+/* --- MAIN & FOOTER --- */
+main { max-width: 800px; margin: 0 auto; padding: 40px; background: white; border-radius: 10px; }
+.btn-brown { background: #5d4037; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+footer { text-align: center; padding: 40px; color: #888; }

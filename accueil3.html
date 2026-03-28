@@ -2,23 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Atelier Botanique - Soins Naturels</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="botanique-body">
 
-    <nav class="main-nav">
-        <a href="login.html" class="nav-button">Connexion</a>
-        <a href="signup.html" class="nav-button">Inscription</a>
+    <nav class="top-nav">
+        <div class="nav-buttons">
+            <div id="auth-links">
+                <a href="login.html" class="nav-button">Connexion</a>
+                <a href="signup.html" class="nav-button">Inscription</a>
+            </div>
+            <button id="logoutBtn" class="nav-button" style="display:none; background-color: #5d4037; border:none; cursor:pointer;">Déconnexion</button>
+        </div>
     </nav>
 
-    <header>
-        <img src="logo.png" alt="Logo L'Atelier Botanique (une feuille stylisée)" width="150">
-        <h1>L'Atelier Botanique</h1>
-        <p><em>La beauté, simplement, par la terre.</em></p>
+    <header class="main-header">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo L'Atelier Botanique" class="center-logo">
+            <h1>L'Atelier Botanique</h1>
+            
+            <h2 id="welcomeMessage" style="color: #4a6741; margin-top: 15px; font-family: 'Georgia', serif;"></h2>
+            
+            <p class="tagline"><em>La beauté, simplement, par la terre.</em></p>
+        </div>
     </header>
-
-    <hr>
 
     <main>
         <section>
@@ -35,23 +44,26 @@
             
             <details>
                 <summary><strong>1. Crème de Jour à la Rose Sauvage</strong></summary>
-                <p>Hydratation intense et éclat du teint. Convient aux peaux sensibles.</p>
-                <img src="creme.jpg" alt="Pot en verre de Crème de Jour à la Rose Sauvage" width="200">
-                <p><em>Prix : 29,00 €</em></p>
+                <div class="detail-content">
+                    <p>Hydratation intense et éclat du teint. Convient aux peaux sensibles.</p>
+                    <img src="creme.jpg" alt="Crème de Jour" width="200">
+                    <p><em>Prix : 29,00 €</em></p>
+                </div>
             </details>
 
             <details>
                 <summary><strong>2. Huile de Nuit Régénérante</strong></summary>
-                <p>Un complexe d'huiles précieuses pour nourrir et réparer pendant le sommeil.</p>
-                <img src="huile.jpg" alt="Flacon compte-gouttes d'Huile de Nuit" width="200">
-                <p><em>Prix : 35,00 €</em></p>
+                <div class="detail-content">
+                    <p>Un complexe d'huiles précieuses pour nourrir et réparer pendant le sommeil.</p>
+                    <img src="huile.jpg" alt="Huile de Nuit" width="200">
+                    <p><em>Prix : 35,00 €</em></p>
+                </div>
             </details>
         </section>
 
         <section>
             <h2>Transparence des Ingrédients</h2>
-            <p>Origine des actifs principaux :</p>
-            <table border="1">
+            <table class="botanique-table">
                 <thead>
                     <tr>
                         <th>Ingrédient</th>
@@ -78,32 +90,25 @@
                 </tbody>
             </table>
         </section>
+
+        <section class="newsletter-section">
+            <h3>Rejoindre l'Atelier</h3>
+            <p>Inscription pour recevoir les conseils beauté et les offres exclusives.</p>
+            <form>
+                <input type="email" placeholder="contact@email.com" required class="auth-input" style="max-width: 300px; display: inline-block; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <button type="submit" class="btn-brown">S'abonner</button>
+            </form>
+        </section>
     </main>
 
-    <hr>
-
-    <section>
-        <h3>Rejoindre l'Atelier</h3>
-        <p>Inscription pour recevoir les conseils beauté et les offres exclusives.</p>
-        <form>
-            <label for="email">Adresse Email :</label>
-            <input type="email" id="email" name="email" placeholder="contact@email.com" required>
-            <br><br>
-            <button type="submit">S'abonner</button>
-        </form>
-    </section>
-
-    <hr>
-
     <footer>
-        <nav>
-            <p>Suivre l'actualité : 
-                <a href="#">Instagram</a> | 
-                <a href="#">Boutique en ligne</a>
-            </p>
-        </nav>
+        <p>Suivre l'actualité : 
+            <a href="#">Instagram</a> | 
+            <a href="#">Boutique en ligne</a>
+        </p>
         <p><small>© 2026 L'Atelier Botanique. Tous droits réservés.</small></p>
     </footer>
-<script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
