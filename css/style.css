@@ -1,0 +1,240 @@
+/* --- STYLE GÉNÉRAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6; /* Beige barek mta' wra9 */
+    color: #333;
+    line-height: 1.6;
+}
+
+.botanique-body {
+    font-family: 'Georgia', serif;
+}
+
+/* --- NAVBAR (Boutonat Nour) --- */
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* I-hez el boutonat 3al imine */
+    padding: 20px 40px;
+    background-color: transparent;
+}
+
+.nav-button {
+    padding: 8px 20px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #333; /* Loun ghame9 kima fil photo */
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* --- HEADER (M'santar kima fil photo) --- */
+.main-header {
+    text-align: center;
+    padding: 20px 0 60px 0;
+    background-color: #fdfaf6;
+}
+
+.center-logo {
+    width: 120px; /* Kobr el logo kima fil photo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.8rem;
+    color: #000;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: none;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #4a6741;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #4a6741;
+    padding-left: 20px;
+    margin: 30px 0;
+    color: #555;
+}
+
+/* --- TABLES & DETAILS --- */
+.botanique-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.botanique-table th {
+    background-color: #4a6741;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.botanique-table td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+details {
+    background: #f9fbf9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4a6741;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #4a6741;
+}
+
+/* --- NEWSLETTER --- */
+.newsletter-section {
+    background: #fdfaf6;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 50px;
+    border: 1px dashed #4a6741;
+}
+
+.btn-brown {
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-brown:hover {
+    background-color: #3e2723;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #4a6741;
+    text-decoration: none;
+}
+/* --- STYLE LOGIN & SIGNUP (M'santar) --- */
+
+/* Hathi el class elli t'7ot el card fil wast bedhabt */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdfaf6; /* Loun beige mta' l'Atelier */
+    margin: 0;
+}
+
+/* El Card mta' el Login kima fil photo */
+.auth-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* El Titre kima "Login" fil photo */
+.auth-title {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    color: #5d4037; /* Marron terre kima Aziz */
+    margin-bottom: 5px;
+    display: inline-block;
+    border-bottom: 3px solid #4a6741; /* Khat akhdhar kima fil photo */
+}
+
+.auth-form-group {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.auth-form-group label {
+    display: block;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* El Input kima fil photo */
+.auth-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fdfaf6;
+    box-sizing: border-box;
+}
+
+/* El Bouton Azraq kima fil photo */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- MAIN & FOOTER --- */
+main { max-width: 800px; margin: 0 auto; padding: 40px; background: white; border-radius: 10px; }
+.btn-brown { background: #5d4037; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+footer { text-align: center; padding: 40px; color: #888; }

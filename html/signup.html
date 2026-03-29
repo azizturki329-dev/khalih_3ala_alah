@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - L'Atelier Botanique</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page"> <div class="auth-container">
+        <h2 class="auth-title">Sign Up</h2>
+
+        <form>
+            <div class="auth-form-group">
+                <label>Nom Complet</label>
+                <input type="text" class="auth-input" placeholder="Votre nom" name="username" required>
+            </div>
+
+            <div class="auth-form-group">
+                <label>Email</label>
+                <input type="email" class="auth-input" placeholder="Votre email" required>
+            </div>
+
+            <div class="auth-form-group">
+                <label>Mot de passe</label>
+                <input type="password" class="auth-input" name="firstpwd" placeholder="Créer un mot de passe" required>
+            </div>
+
+            <div class="auth-form-group">
+                <label>Confirmer le mot de passe</label>
+                <input type="password" class="auth-input" name="pwd" placeholder="Confirmer" required>
+            </div>
+
+            <button type="submit" class="auth-btn">S'inscrire</button>
+        </form>
+
+        <p class="auth-switch">
+            Déjà un compte ? <a href="login.html" class="auth-link">Login</a>
+        </p>
+    </div>
+<script src="../js/script.js"></script>
+</body>
+</html>
