@@ -1,10 +1,7 @@
 const form = document.querySelector("form");
-const btn = document.querySelector("button");
 
-// Effet de survol
-btn.addEventListener("mouseover", () => {
-    btn.style.backgroundColor = "lightblue";
-});
+if (form) {
+    const btn = form.querySelector("button");
 
 btn.addEventListener("mouseout", () => {
     btn.style.backgroundColor = "#007bff";
