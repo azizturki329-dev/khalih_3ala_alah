@@ -99,3 +99,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Validation Page Contact
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById("contactName").value;
+        const msg = document.getElementById("contactMessage").value;
+
+        if (name && msg) {
+            alert(`Merci ${name} ! Votre message a été envoyé avec succès.`);
+            contactForm.reset();
+            window.location.href = 'accueil3.html';
+        } else {
+            alert("Veuillez remplir tous les champs.");
+        }
+    });
+}
