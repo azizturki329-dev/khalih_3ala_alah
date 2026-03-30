@@ -14,9 +14,21 @@ body {
 /* --- NAVBAR (Boutonat Nour) --- */
 .top-nav {
     display: flex;
-    justify-content: flex-end; /* I-hez el boutonat 3al imine */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
     background-color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav-button {
