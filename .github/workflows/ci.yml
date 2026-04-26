@@ -1,0 +1,22 @@
+name: CI Pipeline Statique  # Le nom qui apparaîtra sur GitHub
+
+on:
+  push:
+    branches: [ main, develop ] # Se lance quand on envoie du code sur ces branches
+  pull_request:
+    branches: [ main, develop ] # Se lance quand on crée une demande de fusion
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Vérifier la syntaxe HTML
+        # On utilise un outil (htmlhint) pour voir si tu n'as pas oublié de balises
+        run: npx htmlhint "**/*.html"
+
+      - name: Tester la construction Docker
+        # On vérifie que ton Dockerfile fonctionne toujours
+        run: docker build -t mon-image-test .
