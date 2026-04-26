@@ -1,0 +1,21 @@
+name: CI Pipeline Statique
+
+on:
+  push:
+    branches: [ feature_docker ]  # On retire main et develop
+  pull_request:
+    branches: [ main ]            # On garde PR vers main pour l'étape 4 du projet
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Vérifier la syntaxe HTML
+        run: npx htmlhint "**/*.html"
+
+      - name: Tester la construction Docker
+        # Si le fichier est bien à la racine, cette commande DOIT fonctionner
+        run: docker build -t mon-image .
