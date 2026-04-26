@@ -72,3 +72,20 @@ Cause : Lors de la Pull Request, Zayneb a relevé un défaut d'affichage (paddin
 Problème : Blocage de la fusion pour garantir la qualité "Luxe & Aesthetic" du site.
 
 Résolution : Un échange collaboratif a eu lieu sur GitHub. Nour a corrigé son CSS selon les recommandations de la revue de code avant de procéder à l'intégration final
+
+
+---DOCKER------------------------------------------------------------------------------
+
+## 🛠 Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
+
+* **Docker** : version 20.10.x ou supérieure.
+* **Docker Compose** : version 2.x ou supérieure.
+* **Système** : Windows (avec WSL2), macOS ou Linux.
+* **Ports libres** : 8080 (Frontend) et 3000 (Backend).
+
+### Configuration initiale
+1. Vérifier l'installation : `docker --version` et `docker compose version`.
+2. Cloner le dépôt.
+3. Créer le fichier d'environnement : `cp .env.example .env`.
