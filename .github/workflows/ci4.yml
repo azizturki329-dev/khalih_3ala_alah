@@ -1,0 +1,20 @@
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Vérifier la syntaxe HTML
+        run: npx htmlhint "**/*.html"
+
+      - name: Trouver et Construire Docker
+        run: |
+          # Cette commande cherche le Dockerfile où qu'il soit et lance le build
+          DOCKERFILE_PATH=$(find . -name "Dockerfile" | head -n 1)
+          if [ -z "$DOCKERFILE_PATH" ]; then
+            echo "ERREUR : Le fichier Dockerfile est introuvable dans le dépôt !"
+            exit 1
+          fi
+          echo "Dockerfile trouvé ici : $DOCKERFILE_PATH"
+          docker build -t mon-image -f "$DOCKERFILE_PATH" .
